@@ -1,11 +1,8 @@
-# StatusBar
+package com.czl.statusbar;
 
-整理自:[白底黑字！Android浅色状态栏黑色字体模式](https://www.jianshu.com/p/7f5a9969be53)
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
-第三方库:[SystemBarTint](https://github.com/jgilfelt/SystemBarTint)
-
-使用方法:
-```java
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -16,4 +13,3 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 }
-```
