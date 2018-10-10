@@ -9,12 +9,26 @@
 1. [SystemBarTint](https://github.com/jgilfelt/SystemBarTint)
 
 ##### 使用方法:
+1. 在工程目录下添加maven
+```
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }       
+        ...
+    }
+}
+```
+2. module下添加gradle依赖
+```
+implementation 'com.github.chenzhenlindx:StatusBar:1.0.0'
+```
 ```java
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //白底黑字
         StatusBarUtil.StatusBarLightMode(this);
         StatusBarUtil.setStatusBarColor(this, android.R.color.white);
         setContentView(R.layout.activity_main);
